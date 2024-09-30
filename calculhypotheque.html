@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Mortgage Calculator
+		</title>
+		<link rel="stylesheet" href="styleMortgage.css">
+
+	</head>
+	
+	<body class="mortgageBackground">
+		<div class="contactNav">
+			<a href="menu.html"> HOME </a>
+		</div>
+		<div class="mortgage-block">
+			<form id="formulaire">
+				<div class="div-title">
+					<label > Mortgage Calculator </label>
+				</div>
+				
+				<div class="divPrice">
+					<div class="lbl-output-price-container">
+						<label for="price" class="lblCalculator"> Purchase Price: </label>
+						<output id="outputPrice" class="outputs">  </output> 
+					</div>
+					<input type="range" class="slider" value="500000" id="price" min="0" max="1000000" step="10000">
+				</div>
+
+				<!-- Slider for Down Payment -->
+				<div class="divDownPayment">
+					<div class="lbl-output-downpayment">
+						<label for="down-payment" class="lblCalculator">Down Payment: </label>
+						<output id="outputDPay" class="outputs">  </output> 
+					</div>
+					<input type="range" class="slider"  value="250000"  id="down-payment" min="0" max="500000" step="10000">
+				</div>
+
+
+				<!-- Slider for Amortization Period -->
+				<div class="divAmort">
+					<div class="lbl-output-Amort">
+						<label for="amortization-period" class="lblCalculator"> Amortisation Period:  </label>
+						<output id="outputAmort" class="outputs">  </output>
+					</div>
+					<input type="range" class="slider"  value="27" id="amortization-period" min="25" max="30" step="1">
+				</div>
+
+
+				<!-- Slider for Interest Rate -->
+				<div class="div-interest">
+					<div class="lbl-output-Interest">
+						<label for="interest-rate" class="lblCalculator"> Interest Rate:  </label>
+						<output id="outputInterest" class="outputs">  </output>
+					</div>
+					<input type="range" class="slider"  value="5" id="interest-rate" min="0" max="10" step="0.1">
+				</div>
+				
+				<!--Estimated $ pr. month  -->
+				<div class="divPerMonth">
+					<label for="outLoan" class="lblCalculator"> Per. Month: </label>
+					<output id="pMonth" class="outputs"> </output>
+				</div> 
+				
+				<!-- Calculate Button  -->
+				<div class="div-button"> 
+					<button id="btnCalcule" onclick="calculer(event)" type="submit" >Get A Quote </button>
+				</div>
+            </form>
+        </div>
+    </div>
+	<script src="calculeHypotheque.js"> </script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Contact Us
+		</title>
+		<link rel="stylesheet" href="styleContact.css">
+		<script src="sendInfo.js"> </script>
+	</head>
+	
+	<body class="infoBackground">
+		<div class="contactNav">
+			<a href="menu.html"> HOME </a>
+		</div>
+		
+		<h1 class="lblContact" > CONTACT US
+			<p> <strong>Need an expert?</strong> <small>You are more than
+			welcome to leave your contact info and we will 
+			be in touch shortly</small>.</p>
+		</h1>
+		
+		<div class="divContact">
+			<form>
+				<label class="lblForm"> First Name </label>
+				<input type="text" class="inputForm">
+				
+				<label class="lblForm"> Last Name </label>
+				<input type="text" class="inputForm">
+				
+				<label class="lblForm"> Email </label>
+				<input type="email" class="inputForm">
+				
+				<label class="lblForm"> Adresse </label>
+				<input type="text" class="inputForm">
+				
+				<label class="lblForm"> </label>
+				<input type="date" class="inputForm">
+				
+				<input id="btnSend" type="submit" onclick="sendInfo()" class="btnForm" value="SEND">
+				<input id="btnReset" type="reset" class="btnForm" value="RESET">
+			</form>
+		</div>
+		
+	</body>
+</html>

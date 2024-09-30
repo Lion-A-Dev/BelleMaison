@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Welcome Page
+		</title>
+		<link rel="stylesheet" href="styleMenu.css">
+		
+	</head>
+	
+	<body class="background">
+	
+		<div class = "container">
+			
+			<section id="greeting">
+				
+			<div class = "navbar">
+				<div class="clock">
+					<span id="hrs">00</span>
+					<span>:</span>
+					<span id="min">00</span>
+					<span>:</span>
+					<span id="sec">00</span>
+				</div>	
+				
+				<div class="date-block">
+					<span id="day">  </span>
+					<span id="month">  </span>
+					<span id="dayNumber">	</span>
+					<span id="year">  </span>	
+				</div>
+				
+			
+				<div>
+					<a href="calculhypotheque.html"> Mortgage Calculator </a>
+					<a href="infoclient2.html"> Contact Us </a>
+				</div>
+			</div>
+				<label class="lblMainPage">
+					FIND YOUR HOME
+				</label>
+				<button class="explore" onClick="document.getElementById('section2').scrollIntoView({behavior:'smooth'});"> Explore </button>
+			</section>
+			
+			<section id="section2" class="sectionCategories">
+				<div class="div-categories">
+					<div id="divAppart" class="items" onclick="appartlisting()">
+						<p class="cat-title"> APPARTMENTS </p>
+					</div>
+					
+					<div id="divHouse" class="items" onclick="homeListing()">
+						<p class="cat-title"> HOUSES </p>
+					</div>
+					
+					<div id="divCott" class="items" onclick="cottageListing()">
+						<p class="cat-title"> COTTAGES </p>
+					</div>
+				</div>
+			</section>
+		</div>
+	
+	
+		<script src="date.js"></script>
+		<footer>
+			<p>&copy; 2024 All rights reserved.</p>
+		</footer>
+	</body>
+</html>

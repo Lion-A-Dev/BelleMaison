@@ -1,0 +1,181 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.contactNav a{
+	color: #FF5F15;
+	position: absolute;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 28px;
+	top: 25px;
+	left: 30px;
+}
+.contactNav a:hover{
+	color: #E65300;
+}
+
+/*------------ MORTGAGE CALCULATOR------------*/
+.mortgageBackground{
+	background-image: url('MortgageCalculator.jpg');
+	background-size:110% 90%;
+	background-repeat:np-repeat;
+	background-position: right;
+
+	
+}
+.mortgage-block{
+	width: 800px;
+	height: 580px;
+	position: absolute;
+	top: 50%;
+	left: 34%;
+	transform: translate(-50%,-50%);
+	background: #304988;
+	border-radius: 20px;
+	border-color: white;
+	border-style: solid;
+	border-width: 10px 10px;
+	font-size: 15px;
+}
+.mortgage-block div {
+    position: absolute; /* Allow each slider to be positioned individually */
+	font-weight: bold;
+}
+.div-title{
+	top: 45px;
+	left: 100px;
+	font-weight:bold;
+	font-size:35px;
+	color:white;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 125%; /* Adjust width as needed */
+    height: 16px; /* Slimmer height for a softer look */
+    background: linear-gradient(90deg, rgb(255,95,21) 50%, rgb(214,214,214) 50%); /* Subtle gradient for the track */
+    border-radius: 50px; /* Rounded edges for the track */
+    outline: none;
+    margin: 0 30px;
+}
+.slider::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    background: #FFF; /* Slider thumb color */
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+	border-color: #FF5F15;
+	border-style: solid;
+	border-width: 6px 6px;
+}
+.divPrice{
+	margin: 20px 0;	
+}
+.lbl-output-price-container{
+	width: 290px;
+	display: flex;
+	top: 110px;
+	left: 75px;
+}
+#price{
+	position: relative;
+	left:75px;
+	top: 140px;	
+}
+.divDownPayment{
+	margin: 20px 0;	
+}
+.lbl-output-downpayment{
+	width: 300px;
+	display: flex;
+	top: 110px;
+	left: 430px;
+}
+#down-payment{
+	position: relative;
+	top: 140px;
+	left: 430px;
+}
+.divAmort{
+	margin: 20px 0;
+}
+.lbl-output-Amort{
+	display: flex;
+	width: 300px;
+	top: 230px;
+	left: 430px;
+}
+#amortization-period{
+	position: relative;
+	top: 259px;
+	left: 430px;	
+}
+.div-interest{
+	margin: 20px 0;
+}
+.lbl-output-Interest{
+	display: flex;
+	width: 300px;
+	top:230px;
+	left: 75px;	
+}
+#interest-rate{
+	position: relative;
+	top:259px;
+	left: 75px;
+	
+}
+.divPerMonth{
+	left:75px;
+	bottom: 175px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 22px;
+}
+.outputs{
+	padding: 0px 10px;
+	color: white;
+}
+.div-button{
+	position: absolute;
+	left: 105px;
+	bottom: 75px;
+}
+.div-button button{
+	height: 40px;
+	width: 160px;
+	background-color: #FF5F15;
+	border-width:0;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	font-weight:bold;
+}
+.div-button button:hover{
+	background-color:#E65300;
+	cursor: pointer;
+}
+.lblCalculator{
+	color:white;
+	display: block;
+	margin-bottom: 10px;
+	margin-left:30px;
+}
+
+
+
+
+
+
